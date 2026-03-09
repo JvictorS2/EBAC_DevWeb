@@ -1,0 +1,166 @@
+/* Tamanho de tela considerado 920 x 870 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #11001c;
+  color: #eee;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+a,
+li {
+  list-style: none;
+  text-decoration: none;
+  color: #eee;
+}
+
+h2 {
+  font-size: 28px;
+  font-style: italic;
+}
+
+svg {
+  height: 5rem;
+}
+
+/* Header */
+header {
+  position: sticky;
+  height: 8vh;
+  top: 0;
+  background-color: #11001c;
+}
+header nav {
+  height: 100%;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+header nav ul li a.link {
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: 0.4s;
+}
+
+header nav ul li a.link:hover {
+  background-color: #32004f;
+}
+
+div.me {
+  height: 30vh;
+  background-color: #220135;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}
+
+/* Sobre */
+
+main section.about_me {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Habilidades */
+
+main section.hability_section {
+  display: grid;
+  gap: 0.5rem;
+}
+
+main section.hability_section ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* Projetos */
+
+main section.projects_section {
+  display: grid;
+  gap: 0.5em;
+}
+
+main section.projects_section .container_projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+main section.projects_section .container_projects article {
+  display: grid;
+  gap: 0.75rem;
+  justify-items: center;
+}
+
+main section.projects_section .container_projects article p {
+  text-align: center;
+}
+
+main section.projects_section .container_projects article img {
+  max-width: 250px;
+}
+
+/* Footer */
+
+footer {
+  display: grid;
+  padding: 0 1.5rem 2rem 1.5rem;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "title title"
+    "links copyright";
+  align-items: center;
+}
+
+.title {
+  grid-area: title;
+}
+
+.links_contatos {
+  grid-area: links;
+}
+
+.copyright {
+  grid-area: copyright;
+}
+
+footer ul {
+  display: flex;
+  gap: 1rem;
+}
+
+footer ul li {
+  height: 3rem;
+}
+
+footer ul li svg {
+  height: 100%;
+}
+
+.divisor {
+  height: 0;
+  margin: 1rem auto;
+  border: 0;
+  border-top: 0.5px solid #5f5e5e;
+  width: 90%;
+}

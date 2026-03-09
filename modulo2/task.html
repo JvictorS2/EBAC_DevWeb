@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinemove</title>
+    <style>
+      .carrosel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      li {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- Cabeçalho -->
+      <header>
+        <h1>Bem-Vindo ao Cimemove</h1>
+        <!-- Navegação -->
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#alta">Em alta</a></li>
+            <li><a href="#acao">Ação</a></li>
+            <li><a href="#terror">Terror</a></li>
+            <li><a href="#comedia">Comédia</a></li>
+            <li><a href="#form">Fale consco</a></li>
+            <li><a href="#links">Contatos</a></li>
+          </ul>
+        </nav>
+      </header>
+      <hr />
+      <main>
+        <!-- Seções -->
+        <section id="alta">
+          <h2>Em Alta</h2>
+          <div class="carrosel">
+            <div class="movie">
+              <span></span>
+              <img
+                src="https://img.icons8.com/fluent/1200/image--v2.jpg"
+                height="200px"
+                width="200px"
+                alt="movie_picture"
+              />
+            </div>
+            <div class="movie">
+              <span></span>
+              <img
+                src="https://img.icons8.com/fluent/1200/image--v2.jpg"
+                height="200px"
+                width="200px"
+                alt="movie_picture"
+              />
+            </div>
+            <div class="movie">
+              <span></span>
+              <img
+                src="https://img.icons8.com/fluent/1200/image--v2.jpg"
+                height="200px"
+                width="200px"
+                alt="movie_picture"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section id="acao">
+          <h2>Ação</h2>
+          <div class="carrosel">
+            <div class="movie">
+              <span></span>
+              <img
+                src="https://img.icons8.com/fluent/1200/image--v2.jpg"
+                height="200px"
+                width="200px"
+                alt="movie_picture"
+              />
+            </div>
+            <div class="movie">
+              <span></span>
+              <img
+                src="https://img.icons8.com/fluent/1200/image--v2.jpg"
+                height="200px"
+                width="200px"
+                alt="movie_picture"
+              />
+            </div>
+            <div class="movie">
+              <span></span>
+              <img
+                src="https://img.icons8.com/fluent/1200/image--v2.jpg"
+                height="200px"
+                width="200px"
+                alt="movie_picture"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section id="comedia">
+          <h2>Em Alta</h2>
+          <div class="carrosel">
+            <div class="movie">
+              <span></span>
+              <img
+                src="https://img.icons8.com/fluent/1200/image--v2.jpg"
+                height="200px"
+                width="200px"
+                alt="movie_picture"
+              />
+            </div>
+            <div class="movie">
+              <span></span>
+              <img
+                src="https://img.icons8.com/fluent/1200/image--v2.jpg"
+                height="200px"
+                width="200px"
+                alt="movie_picture"
+              />
+            </div>
+            <div class="movie">
+              <span></span>
+              <img
+                src="https://img.icons8.com/fluent/1200/image--v2.jpg"
+                height="200px"
+                width="200px"
+                alt="movie_picture"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section id="terror">
+          <h2>Em Alta</h2>
+          <div class="carrosel">
+            <div class="movie">
+              <span></span>
+              <img
+                src="https://img.icons8.com/fluent/1200/image--v2.jpg"
+                height="200px"
+                width="200px"
+                alt="movie_picture"
+              />
+            </div>
+            <div class="movie">
+              <span></span>
+              <img
+                src="https://img.icons8.com/fluent/1200/image--v2.jpg"
+                height="200px"
+                width="200px"
+                alt="movie_picture"
+              />
+            </div>
+            <div class="movie">
+              <span></span>
+              <img
+                src="https://img.icons8.com/fluent/1200/image--v2.jpg"
+                height="200px"
+                width="200px"
+                alt="movie_picture"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+      <hr />
+      <!-- Rodapé -->
+      <footer>
+        <!-- Formulário -->
+
+        <div>
+          <h2>Fale consco</h2>
+          <form style="display: flex; flex-direction: column; width: 200px; gap:12px"  >
+            <div><label for="name">Nome</label>
+            <input id="name" type="text" name="name" required /></div>
+
+            <div>
+              <label for="email">Email: </label>
+            <input id="email" type="email" name="email" required />
+            </div>
+            
+
+            <div>
+              <label for="Assunto">Assunto: </label>
+            <select id="Assunto" name="Assunto">
+              <option value="1">1</options>
+              <option value="2">2</options>
+            </select>
+            </div>
+
+            <div>
+              <label for="Mensagem">Mensagem: </label>
+            <textarea name="Mensagem"></textarea>
+            </div>
+          </form>
+        </div>
+
+        <!-- Contato -->
+        <ul>
+          <li><a href="#" >YouTube</a></li>
+          <li><a href="#" >X/Twitter</a></li>
+          <li><a href="#" >Linkdin</a></li>
+          <li><a href="#" >Instagram</a></li>
+          <li><a href="#" >TikTok</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
