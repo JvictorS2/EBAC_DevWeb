@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
+}
+
+body {
+  background: #3d1315;
+  background: radial-gradient(
+    circle,
+    rgba(61, 19, 21, 1) 0%,
+    rgba(49, 15, 16, 1) 50%,
+    rgba(9, 11, 18, 1) 100%
+  );
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #eee;
+}
+
+main.container {
+  width: 500px;
+  min-height: 400px;
+  border: 3px solid #3d1315;
+  box-shadow:
+    0 0 5px #3d1315,
+    0 0 10px #3d1315,
+    0 0 20px #3d1315;
+  padding: 2rem 1rem;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+div.wellcome {
+  text-align: center;
+  color: #ebc037;
+  text-shadow: 0 0 30px #ebc037;
+}
+
+div.message {
+  color: #23e9eb;
+  text-shadow: 0 0 30px #23e9eb;
+}
+
+div.wellcome,
+div.message,
+div.gameControlls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+div.message,
+div.gameControlls {
+  align-items: center;
+  gap: 1rem;
+}
+input,
+button {
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 80%;
+}
+
+input {
+  color: #23e9eb;
+  text-shadow: 0 0 30px #23e9eb;
+  background-color: #0e0e0e30;
+  border: 1px solid #3d1315;
+  box-shadow:
+    0 0 5px #3d1315,
+    0 0 10px #3d1315,
+    0 0 20px #3d1315;
+}
+
+button:hover {
+  cursor: pointer;
+
+  box-shadow:
+    0 0 5px #ebc037,
+    0 0 10px #ebc037;
+}
+
+#try {
+  color: #ebc037;
+  text-shadow:
+    0 0 5px #ebc037,
+    0 0 10px #ebc037;
+}
+
+button {
+  width: 50%;
+  font-weight: bold;
+  background-color: #ebc037;
+  color: #fff;
+  font-size: 18px;
+  box-shadow: 0 0 20px #3d1315;
+  transition: 1s;
+}

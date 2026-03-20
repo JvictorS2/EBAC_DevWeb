@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>Jogo de Adivinhação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <div class="wellcome">
+        <!-- Wellcome -->
+        <h2>Bem-Vindo ao Jodo de Adivinhação</h2>
+        <p>
+          Neste jogo você tem o objeto de adivinha um número inteiro aleatório
+          em um intervalo de 1 à 100, Porém você tem apenas 8 tentaivas. Boa
+          sorte!
+        </p>
+      </div>
+
+      <div class="message">
+        <!-- Tryss -->
+        <p id="Tip">Tente adivinhar</p>
+        <p>Tentativas restantes: <span id="numTry">7</span></p>
+      </div>
+      <div class="gameControlls">
+        <!-- guess -->
+        <input
+          type="number"
+          id="guess"
+          placeholder="Informe um número de 1 à 100"
+        />
+        <button onclick="guess()">Chutar</button>
+      </div>
+    </main>
+  </body>
+</html>
