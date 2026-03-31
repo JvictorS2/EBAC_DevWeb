@@ -1,3 +1,5 @@
+# EBAC Front-End
+
 ## Modulo 6
 
 ### Competências
@@ -9,4 +11,17 @@
 
 ### Tarefa - Jogo de adivinhação
 
-![Texto alternativo](/modulo6/assets/result.png)
+![Jogo de adivinhação](/modulo6/assets/result.png)
+
+## Modulo 7
+
+### Competências
+
+- Prgramação orientada a objetos
+- Herança
+- Encapsulamento
+- Polimorfismo
+
+### Tarefa - Parquímetro
+
+![Parquímetro](/modulo7/assets/result.png)
