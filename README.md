@@ -1,5 +1,17 @@
 # EBAC Front-End
 
+## Modulo 4
+
+### Competências
+
+- Operadores lógicos
+- Operadores relacionais
+- Variável
+
+### Tarefa - Calculadora IMC
+
+![Calculadora IMC](/modulo4/assets/result.png)
+
 ## Modulo 6
 
 ### Competências
@@ -17,7 +29,7 @@
 
 ### Competências
 
-- Prgramação orientada a objetos
+- Programação orientada a objetos
 - Herança
 - Encapsulamento
 - Polimorfismo
@@ -25,3 +37,14 @@
 ### Tarefa - Parquímetro
 
 ![Parquímetro](/modulo7/assets/result.png)
+
+## Modulo 8
+
+### Competências
+
+- LocalStorage
+- Fetch API
+
+### Tarefa - Formulário de endereço com persistência no localStorage
+
+![Formulário](/modulo8/assets/result.png)

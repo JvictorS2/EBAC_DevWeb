@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+body {
+  background: #eeaeca;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #000;
+}
+
+main.container {
+  width: 800px;
+  min-height: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  background-color: #ffffffea;
+  padding: 2rem 1rem;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+hr {
+  height: 0;
+  margin: 1rem auto;
+  border: 0;
+  border-top: 0.5px solid #eeaeca;
+  width: 90%;
+}
+
+/* div.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+} */
+
+div.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+div.form div.cep {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.form div.cep input {
+  width: 90%;
+}
+
+div.form div.Address {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+}
+
+div.form div.btn {
+  display: flex;
+  justify-content: end;
+  padding-right: 1rem;
+}
+
+div.title {
+  text-align: center;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+div.title p {
+  font-style: italic;
+}
+
+/* Button and input */
+
+input,
+button {
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.75rem;
+  width: 80%;
+}
+
+input {
+  box-shadow: 0 0 3px #000;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow:
+    0 0 5px #eeaeca,
+    0 0 10px #eeaeca;
+}
+
+button {
+  width: 40%;
+  font-weight: bold;
+  background-color: #eeaeca;
+  font-size: 18px;
+  transition: 500ms;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}

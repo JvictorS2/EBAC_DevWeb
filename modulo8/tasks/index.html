@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script/script.js" defer></script>
+    <title>Get Address</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="title">
+        <h1>Cadastrar Endereço</h1>
+        <p>Informe o cep para ajudar a preencher o resto dos campos</p>
+        <p id="status"></p>
+      </div>
+      <form>
+        <div class="form">
+            <div class="cep">
+              <input type="text" inputmode="numeric" id="cep" placeholder="Informe o CEP *" />
+            </div>
+            <hr/>
+            <div class="Address">    
+              <input  id="logradouro" placeholder="Rua" />
+                <input  id="bairro" placeholder="Bairro" />
+                <input  id="estado" placeholder="Estado" />
+                <input  id="localidade" placeholder="Localidade" />
+                <input id="regiao" placeholder="Região" />
+                <input  id="uf" placeholder="UF" />
+                <input  id="complemento" placeholder="Complemento" />
+            </div>
+            <hr/>
+            <div class="btn" id="btn"><button>Enviar</button></div>
+      </form>
+    </main>
+  </body>
+</html>
