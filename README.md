@@ -48,3 +48,16 @@
 ### Tarefa - Formulário de endereço com persistência no localStorage
 
 ![Formulário](/modulo8/assets/result.png)
+
+## Modulo 9
+
+### Competências
+
+- Modelo Cliente servidor
+- HTTP e HTTPs
+- Protoclos HTTP
+- Ciclo de vida de uma requisição HTTP
+
+### Tarefa - Cadastro de clientes com a API CRUD CRUD
+
+![Cadastro](modulo9/assets/goal.png)
