@@ -10,7 +10,7 @@
 
 ### Tarefa - Calculadora IMC
 
-![Calculadora IMC](/modulo4/assets/result.png)
+![Calculadora IMC](/4_modulo/assets/result.png)
 
 ## Modulo 6
 
@@ -23,7 +23,7 @@
 
 ### Tarefa - Jogo de adivinhação
 
-![Jogo de adivinhação](/modulo6/assets/result.png)
+![Jogo de adivinhação](/6_modulo//assets/result.png)
 
 ## Modulo 7
 
@@ -36,7 +36,7 @@
 
 ### Tarefa - Parquímetro
 
-![Parquímetro](/modulo7/assets/result.png)
+![Parquímetro](/7_modulo/assets/result.png)
 
 ## Modulo 8
 
@@ -47,7 +47,7 @@
 
 ### Tarefa - Formulário de endereço com persistência no localStorage
 
-![Formulário](/modulo8/assets/result.png)
+![Formulário](/8_modulo/assets/result.png)
 
 ## Modulo 9
 
@@ -60,7 +60,7 @@
 
 ### Tarefa - Cadastro de clientes com a API CRUD CRUD
 
-![Cadastro](modulo9/assets/goal.png)
+![Cadastro](9_modulo/assets/goal.png)
 
 ## Modulo 10
 
@@ -72,4 +72,4 @@
 
 # Tarefa - Tarefa anterior com POO e boas práticas
 
-![Cadastro](modulo10/assets/goal.png)
+![Cadastro](10_modulo/assets/goal.png)
