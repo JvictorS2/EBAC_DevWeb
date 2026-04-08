@@ -61,3 +61,15 @@
 ### Tarefa - Cadastro de clientes com a API CRUD CRUD
 
 ![Cadastro](modulo9/assets/goal.png)
+
+## Modulo 10
+
+### Competências
+
+- Programação Assíncrona
+- Programação Funcional
+- Modularização POO e boas práticas
+
+# Tarefa - Tarefa anterior com POO e boas práticas
+
+![Cadastro](modulo10/assets/goal.png)
