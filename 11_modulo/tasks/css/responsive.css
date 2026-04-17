@@ -1,0 +1,148 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* estilos para tablets */
+  span.main_logo {
+    font-size: 1.5em;
+  }
+
+  div.header_home header div.header_btn {
+    display: block; /* RES */
+  }
+
+  div.header_home nav ul.nav_list {
+    font-size: 1em;
+  }
+
+  div.header_home section.home div.home_title {
+    font-weight: 700;
+    font-size: 3em;
+  }
+
+  div.header_home section.home p {
+    font-size: 1em;
+  }
+
+  main {
+    margin: 3em;
+  }
+
+  main section.container_services div.services {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main section.section_review div.container_review {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main section.section_contact div.contact_others {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer {
+    padding: 2em 3em;
+  }
+
+  footer div.contacts {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* estilos para tablets */
+  span.main_logo {
+    font-size: 2em;
+  }
+
+  div.header_home {
+    height: 60vh;
+  }
+  div.header_home header div.header_btn {
+    display: block; /* RES */
+  }
+
+  div.header_home nav ul.nav_list {
+    font-size: 1.5em;
+  }
+
+  div.header_home section.home div.home_title {
+    font-weight: 700;
+    font-size: 4em;
+  }
+
+  div.header_home section.home p {
+    font-size: 1.5em;
+  }
+
+  main {
+    margin: 3em 4em;
+  }
+
+  main section.container_services div.services {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  main section.section_review div.container_reviews {
+    grid-template-columns: 4fr 10fr;
+    gap: 3em;
+  }
+
+  main section.section_review div.container_review {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main section.section_contact div.contact_others {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main section.section_contact {
+    display: grid;
+    grid-template-areas:
+      "header_contact form"
+      "header_contact form"
+      "contact form";
+    gap: 1em;
+  }
+
+  main section.section_contact div.container_form form div.form_container_name {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer {
+    padding: 2em 4em;
+    grid-template-areas:
+      "logo contacts"
+      "logo contacts"
+      "logo links"
+      "copyright links";
+  }
+
+  footer div.contacts {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  footer div.links {
+    grid-area: links;
+    justify-self: end;
+  }
+}
+
+@media (pointer: fine) {
+  button {
+    cursor: pointer;
+  }
+
+  footer div.links ul li {
+    cursor: pointer;
+  }
+
+  footer div.contacts div.contact_list ul li {
+    cursor: pointer;
+  }
+
+  div.header_home nav ul.nav_list li {
+    cursor: pointer;
+  }
+
+  span.main_logo {
+    cursor: pointer;
+  }
+}

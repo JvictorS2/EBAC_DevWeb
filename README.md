@@ -73,3 +73,15 @@
 # Tarefa - Tarefa anterior com POO e boas práticas
 
 ![Cadastro](10_modulo/assets/goal.png)
+
+## Modulo 11
+
+### Competências
+
+- Flexbox
+- Grid
+- Alinhamento e ajustes de layout
+
+# Tarefa - Agency web Design
+
+![Angecy Web](/11_modulo/assets/tasks/goal.png)
