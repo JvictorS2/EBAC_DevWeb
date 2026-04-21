@@ -1,0 +1,142 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* estilos para tablets */
+
+  .font__heading {
+    font-size: 2.25em;
+    font-weight: 600;
+  }
+
+  .font__home-title {
+    font-weight: 700;
+    font-size: 3em;
+  }
+
+  .font__medium--header {
+    font-size: 1.25em;
+  }
+
+  .main-logo {
+    font-size: 1.5em;
+  }
+
+  .home-header__btn {
+    display: block;
+  }
+
+  .main {
+    margin: 3em;
+  }
+
+  .services {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .reviews-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-contact__name {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact--contact {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer {
+    padding: 2em 3em;
+  }
+
+  .footer__contacts {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* estilos para tablets */
+  .font__medium--header {
+    font-size: 1.5em;
+  }
+
+  .font__heading {
+    font-size: 2.25em;
+    font-weight: 600;
+  }
+
+  .font__home-title {
+    font-weight: 700;
+    font-size: 4em;
+  }
+
+  .main-logo {
+    font-size: 2em;
+  }
+
+  .home {
+    height: 60vh;
+  }
+
+  .home-header__btn {
+    display: block;
+  }
+
+  .main {
+    margin: 3em;
+  }
+
+  .services {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .reviews {
+    grid-template-columns: 4fr 6fr;
+  }
+
+  .reviews-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-contact__name {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact--contact {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-areas:
+      "header_contact form"
+      "header_contact form"
+      "contact form";
+    gap: 1em;
+  }
+
+  .footer {
+    padding: 2em 4em;
+    grid-template-areas:
+      "logo contacts"
+      "logo contacts"
+      "logo links"
+      "copyright links";
+  }
+
+  .footer__contacts {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .footer__links {
+    justify-self: end;
+  }
+}
+
+@media (pointer: fine) {
+  .contact-list ul li,
+  .links-footer__item,
+  .main-logo,
+  .home-header-nav__list li,
+  .btn {
+    cursor: pointer;
+  }
+}

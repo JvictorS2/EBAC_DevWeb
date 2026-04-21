@@ -82,6 +82,6 @@
 - Grid
 - Alinhamento e ajustes de layout
 
-# Tarefa - Agency web Design
+# Tarefa - Agency Web Design
 
 ![Angecy Web](/11_modulo/assets/tasks/goal.png)
