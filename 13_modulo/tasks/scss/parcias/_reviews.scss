@@ -1,0 +1,81 @@
+@use "../mixins/mixins.scss";
+@use "../theme/colors.scss";
+/* Review */
+
+.reviews {
+  @include mixins.gridDisplay;
+
+  &-container {
+    @include mixins.gridDisplay(0.75em);
+    grid-template-columns: 1fr;
+  }
+
+  &-main-container {
+    background-color: colors.$main-review-container;
+    color: #fff;
+    padding: 1.25em;
+    border-radius: 1em;
+    @include mixins.flexColumn(10em);
+    justify-content: space-between;
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &--right {
+        width: 40%;
+        font-size: 0.8em;
+      }
+    }
+
+    &__body {
+      @include mixins.flexColumn(0.25em);
+    }
+  }
+
+  .reviews-container__box {
+    padding: 0.5em;
+    background-color: colors.$sec_color;
+    border-radius: 0.5em;
+
+    &--top {
+      @include mixins.flexColumn;
+      background-color: #fff;
+      padding: 1.25em 0.75em;
+      text-align: justify;
+      border-radius: 0.5em;
+    }
+
+    &--bottom {
+      @include mixins.flexRow;
+      align-items: center;
+      padding: 0.5em 1em;
+    }
+  }
+
+  &-names {
+    @include mixins.flexColumn(0em);
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* estilos para tablets */
+
+  .reviews-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* estilos para tablets */
+
+  .reviews {
+    grid-template-columns: 4fr 6fr;
+
+    &-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

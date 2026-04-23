@@ -1,0 +1,19 @@
+@use "../theme/colors.scss";
+
+.input {
+  background-color: colors.$input-textarea-background;
+  border: none;
+  padding: 0.75em;
+  border-radius: 0.5em;
+  color: #fff;
+}
+
+.textarea {
+  background-color: colors.$input-textarea-background;
+  border: none;
+  padding: 0.75em;
+  border-radius: 0.5em;
+  height: 12em;
+  resize: none;
+  color: #fff;
+}

@@ -1,0 +1,97 @@
+@use "../mixins/mixins.scss";
+@use "../theme/colors.scss";
+
+/* Footer */
+
+.footer {
+  background-color: colors.$footer-background;
+  @include mixins.gridDisplay(3em);
+  color: colors.$sec-color;
+  padding: 2em 1em;
+  grid-template-areas:
+    "logo logo"
+    "links links"
+    "contacts contacts"
+    "copyright copyright";
+
+  &__logo {
+    @include mixins.flexColumn(1em);
+    grid-area: logo;
+  }
+
+  &__copyright {
+    grid-area: copyright;
+  }
+
+  &__links {
+    grid-area: links;
+  }
+
+  &__contacts {
+    @include mixins.gridDisplay;
+    grid-template-columns: 1fr;
+    grid-area: contacts;
+  }
+
+  &-list {
+    @include mixins.flexRow(0.5em);
+    align-items: center;
+  }
+}
+
+.contact-list {
+  @include mixins.flexColumn;
+
+  &__list {
+    @include mixins.flexColumn(0.75em);
+  }
+}
+
+.links-footer {
+  @include mixins.flexRow;
+
+  &__item {
+    border: 1px solid colors.$main-color;
+    border-radius: 50%;
+    height: 2.5em;
+    width: 2.5em;
+    padding: 0.5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* estilos para tablets */
+
+  .footer {
+    padding: 2em 3em;
+
+    &__contacts {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  /* estilos para tablets */
+
+  .footer {
+    padding: 2em 4em;
+    grid-template-areas:
+      "logo contacts"
+      "logo contacts"
+      "logo links"
+      "copyright links";
+
+    &__contacts {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &__links {
+      justify-self: end;
+    }
+  }
+}

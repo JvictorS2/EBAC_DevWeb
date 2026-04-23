@@ -1,0 +1,9 @@
+@use "../theme/colors.scss";
+
+/* About us */
+.about-us {
+  border: 0.5em solid colors.$sec-color;
+  border-radius: 1em;
+  padding: 1em;
+  text-align: justify;
+}

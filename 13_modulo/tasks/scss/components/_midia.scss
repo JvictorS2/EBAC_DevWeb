@@ -1,0 +1,18 @@
+/* Icons & Images */
+
+.svg {
+  &--icon {
+    height: 4em;
+    width: 4em;
+  }
+
+  &--min-icon {
+    height: 3em;
+    width: 3em;
+  }
+}
+
+.img--icon {
+  height: 3em;
+  border-radius: 50%;
+}

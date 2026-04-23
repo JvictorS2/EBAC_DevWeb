@@ -1,0 +1,15 @@
+/* Components */
+@use "./components/fonts";
+@use "./components/buttons";
+@use "./components/midia";
+@use "./components/inputs";
+
+/* Parcias */
+@use "./parcias/global";
+@use "./parcias/home";
+@use "./parcias/main";
+@use "./parcias/aboutUs";
+@use "./parcias/services";
+@use "./parcias/reviews";
+@use "./parcias/contact";
+@use "./parcias/footer";

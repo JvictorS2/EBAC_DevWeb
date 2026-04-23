@@ -1,0 +1,37 @@
+@use "../mixins/mixins.scss";
+@use "../theme/colors.scss";
+/* Services */
+.services {
+  @include mixins.gridDisplay(0.75em);
+  grid-template-columns: 1fr; /* RES */
+
+  &__box {
+    border: 0.5em solid colors.$sec-color;
+    border-radius: 0.75em;
+    padding: 0.5em;
+
+    @include mixins.flexColumn;
+  }
+
+  &-topics__list {
+    @include mixins.gridDisplay(0.5em);
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* estilos para tablets */
+
+  .services {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* estilos para tablets */
+
+  .services {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

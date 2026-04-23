@@ -1,0 +1,82 @@
+@use "../mixins/mixins.scss";
+@use "../theme/colors.scss";
+
+/* Contacts */
+.contact {
+  @include mixins.gridDisplay;
+  grid-template-areas:
+    "header_contact header_contact"
+    "form form"
+    "contact contact";
+
+  &__form {
+    grid-area: form;
+  }
+
+  &__header {
+    @include mixins.flexColumn;
+    grid-area: header_contact;
+  }
+
+  &--contact {
+    grid-area: contact;
+    @include mixins.gridDisplay;
+    grid-template-columns: 1fr;
+
+    &__box {
+      border: 0.5em solid colors.$sec-color;
+      padding: 1em;
+      border-radius: 1em;
+      @include mixins.flexColumn;
+      justify-content: space-between;
+    }
+  }
+}
+
+.form-contact {
+  background-color: colors.$form-color;
+  padding: 1em;
+  border-radius: 1em;
+  @include mixins.flexColumn;
+
+  &__name {
+    @include mixins.gridDisplay;
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-input-label {
+  @include mixins.flexColumn(0.5em);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* estilos para tablets */
+
+  .form-contact__name {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact--contact {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* estilos para tablets */
+
+  .form-contact__name {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact {
+    @include mixins.gridDisplay;
+    grid-template-areas:
+      "header_contact form"
+      "header_contact form"
+      "contact form";
+
+    &--contact {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

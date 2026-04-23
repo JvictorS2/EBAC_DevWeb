@@ -1,0 +1,78 @@
+@use "../theme/colors.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+body {
+  background-color: #f9f9fb;
+}
+
+p {
+  text-align: justify;
+}
+
+li {
+  list-style: none;
+}
+
+/* Logo */
+
+.main-logo {
+  font-family: "Playwrite NO", cursive;
+  font-weight: 800;
+  font-size: 0.8em;
+
+  color: colors.$main-color;
+}
+
+.section-title {
+  display: flex;
+  gap: 1em;
+  background-color: colors.$sec-color;
+  align-items: center;
+  width: fit-content;
+  padding: 0 0.5em;
+  border-radius: 0.35em;
+}
+
+.ball {
+  height: 0.6em;
+  width: 0.6em;
+  background-color: colors.$main-color;
+  border-radius: 50%;
+}
+
+@media (pointer: fine) {
+  .contact-list ul li,
+  .links-footer__item,
+  .main-logo,
+  .home-header-nav__list li,
+  .btn {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* estilos para tablets */
+
+  .main-logo {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* estilos para tablets */
+
+  .main-logo {
+    font-size: 2em;
+  }
+}

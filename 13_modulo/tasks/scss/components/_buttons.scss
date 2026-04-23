@@ -1,0 +1,32 @@
+@use "../theme/colors.scss";
+
+/* Buttons */
+
+.btn {
+  border: none;
+  border-radius: 0.4em;
+  color: #fff;
+  padding: 1em 1.25em;
+  font-size: 0.7em; /* RES */
+
+  &--mainColor {
+    background-color: colors.$main-color;
+  }
+
+  &--secColor {
+    background-color: transparent;
+    color: colors.$font-sec-color;
+    border: solid 1px colors.$font-sec-color;
+  }
+
+  &--form {
+    width: 100%;
+  }
+
+  &--white {
+    margin-top: 0.5em;
+    border-radius: 1em;
+    color: #000;
+    font-weight: bold;
+  }
+}

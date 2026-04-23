@@ -1,0 +1,77 @@
+@use "../mixins/mixins.scss";
+
+/* Home */
+.home {
+  height: 40vh;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(125, 183, 232, 0.6), transparent 70%),
+    radial-gradient(
+      circle at 20% 90%,
+      rgba(245, 230, 168, 0.6),
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 90% 100%,
+      rgba(242, 140, 111, 0.6),
+      transparent 80%
+    ),
+    radial-gradient(circle at 50% 100%, #f7f7f7, transparent 50%);
+  border-radius: 0 0em 2em 2em;
+
+  /* home header */
+
+  &-header {
+    @include mixins.flexRow;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+    padding: 0 1em;
+
+    &-nav__list {
+      @include mixins.flexRow;
+      align-items: center;
+    }
+
+    &__btn {
+      display: none; /* RES */
+    }
+  }
+
+  /* home section */
+
+  &-section {
+    height: 80%;
+    @include mixins.flexColumn(0.75em);
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+      @include mixins.flexColumn(0em);
+      align-items: center;
+    }
+
+    &__btns {
+      @include mixins.flexRow;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* estilos para tablets */
+
+  .home-header__btn {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* estilos para tablets */
+
+  .home {
+    height: 60vh;
+
+    &-header__btn {
+      display: block;
+    }
+  }
+}

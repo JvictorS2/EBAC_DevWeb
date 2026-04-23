@@ -1,0 +1,111 @@
+@use "../theme/colors.scss";
+/* Font Config */
+
+.font {
+  &__secColor {
+    color: colors.$font-sec-color;
+  }
+
+  &__thColor {
+    color: colors.$font-third-color;
+  }
+
+  &__orange {
+    color: colors.$main-color;
+  }
+
+  &__gray {
+    color: colors.$font-four-color;
+  }
+
+  &__small {
+    font-size: 0.8em;
+  }
+
+  &__medium {
+    font-size: 1em;
+
+    &--bold {
+      font-weight: bold;
+    }
+
+    &--header {
+      font-size: 0.75em;
+    }
+  }
+
+  &__large {
+    font-size: 1.5em;
+    font-weight: 600;
+
+    &--bold {
+      font-size: 1.5em;
+      font-weight: 800;
+    }
+  }
+
+  &__heading {
+    font-size: 2em;
+    font-weight: 600;
+  }
+
+  &__home-title {
+    font-weight: 700;
+    font-size: 2em;
+
+    &--orange {
+      color: colors.$main-color;
+    }
+
+    &--italic {
+      font-style: italic;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* estilos para tablets */
+
+  .font {
+    &__heading {
+      font-size: 2.25em;
+      font-weight: 600;
+    }
+
+    &__home-title {
+      font-weight: 700;
+      font-size: 3em;
+    }
+
+    &__medium--header {
+      font-size: 1.25em;
+    }
+  }
+
+  .main-logo {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* estilos para tablets */
+  .font {
+    &__medium--header {
+      font-size: 1.5em;
+    }
+
+    &__heading {
+      font-size: 2.25em;
+      font-weight: 600;
+    }
+
+    &__home-title {
+      font-weight: 700;
+      font-size: 4em;
+    }
+  }
+
+  .main-logo {
+    font-size: 2em;
+  }
+}

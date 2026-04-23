@@ -1,0 +1,27 @@
+@use "../mixins/mixins.scss";
+
+/* Main */
+.main {
+  margin: 3em 1em 1em 1em;
+  @include mixins.flexColumn(3em);
+
+  &__container {
+    @include mixins.flexColumn;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* estilos para tablets */
+
+  .main {
+    margin: 3em;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* estilos para desktops */
+
+  .main {
+    margin: 3em 5em;
+  }
+}

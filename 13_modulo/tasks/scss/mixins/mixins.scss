@@ -1,0 +1,15 @@
+@mixin flexRow($gap: 1em) {
+  display: flex;
+  gap: $gap;
+}
+
+@mixin flexColumn($gap: 1em) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+
+@mixin gridDisplay($gap: 1em) {
+  display: grid;
+  gap: $gap;
+}
