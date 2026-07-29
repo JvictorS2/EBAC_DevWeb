@@ -1,0 +1,42 @@
+li {
+  list-style: none !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: #000;
+}
+
+p {
+  text-align: justify;
+}
+
+body {
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+* {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.secondary-title {
+  text-decoration: underline;
+}
+
+.heading2 {
+  text-shadow: 0px -8px 2px #8df185;
+}
+
+.heading3 {
+  text-shadow: 0px -8px 2px #8df185;
+  font-size: 1.25em;
+}
